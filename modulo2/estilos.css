@@ -1,4 +1,10 @@
-#titulo{color: brown;font-size: 48px;}
+#titulo{color: rgb(0, 0, 0);font-size: 48px;}
+
+
+/* Modulo 2 unidad 1 */
+header{
+    background: linear-gradient( rgb(207, 31, 31), rgb(7, 7, 252));
+}
 
 
 #foto{
@@ -17,3 +23,11 @@
     width: 96px; 
     height: 96px;
 }
+
+/* Modulo 2 unidad 1 */
+#columnas{
+    column-count: 2;
+    column-gap: 100px;
+}
+
+/* Modulo 2 */
