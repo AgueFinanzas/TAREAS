@@ -1,0 +1,111 @@
+header{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+#cajaPrincipal{
+    background-color:white ;
+    border: 2px solid;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    display: flexbox;
+    text-align: center;
+    align-items: flex-start;
+    font-size: small;
+    
+}
+
+#uno{
+    margin: 0 auto;
+    width: 33.3%;
+    height: 33.3%;
+    border: 0;
+    background-color: red;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#dos{margin: 0 auto;
+    width: 33.3%;
+    height: 33.3%;
+    border: 0;
+    background-color: blue;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#tres{
+    margin: 0 auto;
+    width: 33.3%;
+    height: 33.3%;
+    border: 0;
+    background-color:green;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+#cajaPrincipalB{
+    background-color:white ;
+    border: 2px solid;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    display: flexbox;
+    text-align: center;
+    align-items: flex-start;
+    font-size: small;
+    
+}
+
+#unoB{
+    margin: 0 auto;
+    width: 33.3%;
+    height: 33.3%;
+    border: 0;
+    background-color: red;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#dosB{margin: 0 auto;
+    width: 33.3%;
+    height: 33.3%;
+    border: 0;
+    background-color: blue;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#tresB{
+    margin: 0 auto;
+    width: 33.3%;
+    height: 33.3%;
+    border: 0;
+    background-color:green;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
