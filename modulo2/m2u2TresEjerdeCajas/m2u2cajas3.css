@@ -1,0 +1,46 @@
+
+
+
+body{
+    display: flex;
+   
+}
+
+
+.principal{
+    display: flex;
+    border: 2px solid;
+    width: 600px;
+    height: 100px;
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    
+
+}
+
+.rojo{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    
+}
+
+.azul{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.verde{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
