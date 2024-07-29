@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+
+.principal {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 300px;           
+    width: 300px;            
+    border: 2px solid;
+    flex-direction: row;  
+}
+
+
+.caja {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 100px;            
+    height: 100px;           
+    font-size: 15px;
+    color:white;
+
+}
+
+
+.verde {
+    background-color: green;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.rojo {
+    background-color: red;
+}
+
+

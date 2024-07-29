@@ -1,0 +1,51 @@
+/* Estilo general para el body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para la caja principal */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 200px;           
+    width: 600px;            
+    background-color: #ccc;  
+    border: 2px solid #000;  
+}
+
+/* Estilo para las cajas internas */
+.box {
+    display: flex;
+    justify-content: center; /* Centra el número horizontalmente dentro de la caja */
+    align-items: center;     /* Centra el número verticalmente dentro de la caja */
+    width: 100px;            /* Ajusta según tus necesidades */
+    height: 100px;           /* Ajusta según tus necesidades */
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;     /* Opcional: bordes redondeados */
+}
+
+/* Estilos específicos para cada caja */
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+/* Orden de las cajas internas en la dirección inversa de la fila */
+.container {
+    flex-direction: row-reverse;
+}
