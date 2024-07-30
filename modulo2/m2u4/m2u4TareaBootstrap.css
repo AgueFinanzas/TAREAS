@@ -1,0 +1,16 @@
+
+#colorFondo{background-color: rgb(247, 192, 247);}
+
+#colorLetra{
+    color: rgb(223, 18, 18);}
+
+#contenedor{
+    border: 2px solid;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
