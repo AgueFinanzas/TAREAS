@@ -4,10 +4,15 @@ from math import *
 
 ventana = tk.Tk()
 ventana.title("Calculadora")
-ventana.geometry("392x600")
+ventana.geometry("392x350")
 
 #Cuadro donde van las cuentas y resultados
 cuadroDeCuentas = tk.Entry(ventana,width=58,bd=5,bg="white",insertwidth=1).place(x=11,y=10)
+
+
+numeroResultado = 0
+
+
 
 altoBoton=4
 anchoBoton=12
@@ -35,6 +40,22 @@ Boton0=Button(ventana,text="0",height=altoBoton,width=anchoBoton,).place(x=10,y=
 Botonce=Button(ventana,text="CE",height=altoBoton,width=anchoBoton,).place(x=100,y=265)
 Botonigual=Button(ventana,text="=",height=altoBoton,width=anchoBoton,).place(x=190,y=265)
 Botondivi=Button(ventana,text="/",height=altoBoton,width=anchoBoton,).place(x=280,y=265)
+
+
+
+
+#botón tiene que poner su número cuando lo cliqueás
+#se guarda en una variable, en el cuadro de entrada
+#se pone el otro botón en otra variable en el mismo cuadro de entrada
+#se hace la operación
+#se muestra el resultado
+#se borra a cero cuando se apreta "CE"
+
+
+
+
+
+
 
 
 
