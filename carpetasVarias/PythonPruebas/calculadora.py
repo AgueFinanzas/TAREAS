@@ -10,9 +10,6 @@ ventana.geometry("392x350")
 cuadroDeCuentas = tk.Entry(ventana,width=58,bd=5,bg="white",insertwidth=1).place(x=11,y=10)
 
 
-numeroResultado = 0
-
-
 
 altoBoton=4
 anchoBoton=12
@@ -50,6 +47,8 @@ Botondivi=Button(ventana,text="/",height=altoBoton,width=anchoBoton,).place(x=28
 #se hace la operación
 #se muestra el resultado
 #se borra a cero cuando se apreta "CE"
+
+
 
 
 
