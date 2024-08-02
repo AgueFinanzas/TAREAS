@@ -14,7 +14,6 @@ texto=tk.Text(ventana,height=10,width=10).place(x=280,y=10)
 
 
 
-
 ventana.mainloop()
 
 
