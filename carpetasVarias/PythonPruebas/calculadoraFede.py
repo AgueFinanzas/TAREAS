@@ -9,16 +9,11 @@ panelCalculadora.configure(bg="lightblue",)
 
 visorCalculadora=Entry(panelCalculadora,bg="white",width=50,bd=2).place(x=10,y=10)
 
-#texto=tk.Text(panelCalculadora,height=10,width=10).place(x=10,y=50)
-#texto=tk.Text(panelCalculadora,height=10,width=10).place(x=100,y=50)
+texto=tk.Text(panelCalculadora,height=10,width=10).place(x=10,y=50)
+texto=tk.Text(panelCalculadora,height=10,width=10).place(x=100,y=50)
 
 #etiqueta=tk.Label(panelCalculadora,text="HOLA")
 #etiqueta.pack()
-
-
-cuadro=tk.Frame(panelCalculadora,bg="red",width=200,height=200)
-cuadro.pack(padx=10,pady=10)
-
 
 
 
