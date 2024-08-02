@@ -7,18 +7,15 @@ ventana.title("Anotador")
 ventana.configure(bg="lightblue")
 
 
-texto=tk.Text(ventana,height=10,width=10).place(x=10,y=10)
-texto=tk.Text(ventana,height=10,width=10).place(x=100,y=10)
-texto=tk.Text(ventana,height=10,width=10).place(x=190,y=10)
-texto=tk.Text(ventana,height=10,width=10).place(x=280,y=10)
+texto=tk.Text(ventana,height=10,width=10).place(x=10,y=50)
 
 
-altoBoton=10
-anchoBoton=10
-
-boton=tk.Button(ventana,text="+",height=altoBoton,width=anchoBoton,)
 
 
+altoBoton=1
+anchoBoton=1
+
+boton=tk.Button(ventana,text="+",height=altoBoton,width=anchoBoton,font=12).place(x=10,y=10)
 
 
 
@@ -30,3 +27,8 @@ ventana.mainloop()
 #a la izquierda también y que podrá ser cerrado
 
 
+
+#def on_button_click():
+#    print("¡Botón presionado!")
+#root = tk.Tk()
+#button = tk.Button(root, text="Presionar", command=on_button_click)#
