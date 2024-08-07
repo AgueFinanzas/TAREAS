@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import *
+from tkinter import messagebox
 
 ventana=tk.Tk()
 ventana.geometry("720x400")
@@ -20,12 +21,10 @@ def CuadroDinamico():
     global posicion_y
     global contador_filas
 
-    if contador_filas > maximo_filas:
-        return print("no más posts")
-
-    #if posicion_x > limite_x and posicion_y > limite_y:
-    #    return
-
+    if contador_filas >= maximo_filas:
+        messagebox.showinfo ("Límite de alcanzado","Cerrá algún Post-it para abrir otro")
+        return
+    
     texto=tk.Text(ventana,height=5,width=10,font=12)
     texto.place(x=posicion_x , y=posicion_y)
     posicion_x += 100
@@ -33,11 +32,11 @@ def CuadroDinamico():
     if posicion_x >= limite_x:
         posicion_x = 10
         posicion_y += 100
+        contador_filas += 1
     
 
-
 #Los cuadros de textos tienen que poder cerrarse
-#Los cuadros de textos tienen que tener una cantidad máxima de abiertos
+
 
 
 
@@ -46,9 +45,34 @@ anchoBoton=1
 boton=tk.Button(ventana,text="+",height=altoBoton,width=anchoBoton,font=12, command=CuadroDinamico).place(x=10,y=10)
 
 
-
-
 ventana.mainloop()
+
+
+
+
+ # Crear un frame para el cuadro de texto y el botón de cierre
+  #  frame = tk.Frame(ventana)
+  #  frame.place(x=posicion_x, y=posicion_y)
+
+    # Crear un nuevo cuadro de texto
+   # texto = tk.Text(frame, height=5, width=30, font=12)
+   # texto.pack(side=tk.LEFT)
+
+    # Crear el botón de cierre
+   # boton_cerrar = tk.Button(frame, text="X", command=frame.destroy, font=("Arial", 8))
+    #boton_cerrar.pack(side=tk.RIGHT)
+
+
+
+
+
+
+
+
+
+
+
+
 #crear una ventana para guardar cuadros de textos
 #la ventana tendrá que aparecer vacía al principio
 #arriba a la izquierda tendrá que tener un botón que
