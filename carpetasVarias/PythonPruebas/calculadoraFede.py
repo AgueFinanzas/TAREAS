@@ -17,4 +17,13 @@ texto=tk.Text(panelCalculadora,height=10,width=10).place(x=100,y=50)
 
 
 
+
+
+
+
+
+
+
 panelCalculadora.mainloop()
+
+

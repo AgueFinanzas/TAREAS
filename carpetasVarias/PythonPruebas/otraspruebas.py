@@ -7,15 +7,34 @@ ventana.title("Anotador")
 ventana.configure(bg="lightblue")
 
 
-texto=tk.Text(ventana,height=10,width=10).place(x=10,y=50)
+#texto=tk.Text(ventana,height=10,width=10).place(x=10,y=50)
 
+#texto=tk.Text(ventana,height=10,width=10).place(x=10,y=50)
+
+
+#def crear_cuadro():
+ #   cuadro_texto = tk.Text(ventana, height=5, width=10, font=12)
+#    cuadro_texto.place(x=10, y=50)
+
+posicion_y = 40
+def CuadroDinamico():
+    global posicion_y
+    texto=tk.Text(ventana,height=5,width=10,font=12)
+    texto.place(x=10,y=posicion_y)
+    posicion_y += 80
 
 
 
 altoBoton=1
 anchoBoton=1
 
-boton=tk.Button(ventana,text="+",height=altoBoton,width=anchoBoton,font=12).place(x=10,y=10)
+boton=tk.Button(ventana,text="+",height=altoBoton,width=anchoBoton,font=12, command=CuadroDinamico).place(x=10,y=10)
+
+
+
+
+
+
 
 
 
