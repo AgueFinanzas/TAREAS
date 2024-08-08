@@ -10,7 +10,7 @@ ventana.configure(bg="lightblue")
 
 posicion_y = 45
 posicion_x = 10
-limite_x = 700
+limite_x = 600
 limite_y = 220
 
 contador_filas = 0
@@ -25,20 +25,25 @@ def CuadroDinamico():
         messagebox.showinfo ("Límite alcanzado","Cerrá algún Post-it para abrir otro")
         return
     
-    texto=tk.Text(ventana,height=5,width=10,font=12)
-    texto.place(x=posicion_x , y=posicion_y)
-    posicion_x += 100
+    # texto=tk.Text(ventana,height=5,width=10,font=12)
+    # texto.place(x=posicion_x , y=posicion_y)
+    # posicion_x += 100
 
     if posicion_x >= limite_x:
         posicion_x = 10
         posicion_y += 100
         contador_filas += 1
     
-
-#Los cuadros de textos tienen que poder cerrarse
-
-
-
+# Crear un frame para el cuadro de texto y el botón de cierre
+    frame = tk.Frame(ventana)
+    frame.place(x=posicion_x, y=posicion_y)
+    posicion_x += 110
+    # Crear un nuevo cuadro de texto
+    texto = tk.Text(frame, height=5, width=10, font=10)
+    texto.pack(side=tk.LEFT)
+    # Crear el botón de cierre
+    boton_cerrar = tk.Button(frame, text="X", command=frame.destroy, font=("Arial", 6),width=1,height=1)
+    boton_cerrar.pack(side=tk.RIGHT)
 
 altoBoton=1
 anchoBoton=1
