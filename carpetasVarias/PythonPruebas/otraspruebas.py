@@ -22,7 +22,7 @@ def CuadroDinamico():
     global contador_filas
 
     if contador_filas >= maximo_filas:
-        messagebox.showinfo ("Límite de alcanzado","Cerrá algún Post-it para abrir otro")
+        messagebox.showinfo ("Límite alcanzado","Cerrá algún Post-it para abrir otro")
         return
     
     texto=tk.Text(ventana,height=5,width=10,font=12)
