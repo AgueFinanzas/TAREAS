@@ -5,11 +5,11 @@ class Aplicacion(tk.Tk):
         super().__init__()
         
         self.title("Ejemplo de POO con Tkinter")
-        self.geometry("400x300")
+        self.geometry("600x400")
         
         # Crear un botón
-        self.boton = tk.Button(self, text="Crear Cuadro de Texto", command=self.crear_cuadro_texto)
-        self.boton.pack(pady=20)
+        self.boton = tk.Button(self, text="+", command=self.crear_cuadro_texto,width=2,height=1).place(x=10,y=10)
+        # self.boton.pack(pady=10)
         
         # Posiciones iniciales
         self.posicion_x = 10
@@ -30,11 +30,11 @@ class Aplicacion(tk.Tk):
         frame.place(x=self.posicion_x, y=self.posicion_y)
 
         # Crear un cuadro de texto
-        texto = tk.Text(frame, height=5, width=30, font=12)
+        texto = tk.Text(frame, height=5, width=10, font=12)
         texto.pack(side=tk.LEFT)
 
         # Crear el botón de cierre
-        boton_cerrar = tk.Button(frame, text="X", command=frame.destroy, font=("Arial", 8), width=2, height=1)
+        boton_cerrar = tk.Button(frame, text="X", command=frame.destroy, font=("Arial", 8), width=1, height=1)
         boton_cerrar.pack(side=tk.RIGHT)
 
         # Actualizar la posición x
@@ -50,3 +50,5 @@ class Aplicacion(tk.Tk):
 if __name__ == "__main__":
     app = Aplicacion()
     app.mainloop()
+
+
